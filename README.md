@@ -1,6 +1,6 @@
 # Barrie-George Davies — game showcase
 
-A one-page site introducing Barrie-George Davies and two games: Monkey Business and Bushveld Brothers. Each game has a short description, a GitHub link, and a video that plays automatically.
+A one-page site introducing Barrie-George Davies and two games: Monkey Business and Seeds of Change. Each game has a short description, a GitHub link, and a video that plays automatically.
 
 ## Add your trailers
 
@@ -9,7 +9,7 @@ Export each trailer as an **MP4 (H.264)**, ideally under 30 MB. GitHub rejects f
 Save them in the `videos` folder with these exact names:
 
 - `videos/monkey-business.mp4`
-- `videos/bushveld-brothers.mp4`
+- `videos/seeds-of-change.mp4`
 
 Reload the page. The title card disappears and the clip plays on its own, muted and looping. Use **Sound on** to hear it, and **Pause** to stop it.
 
@@ -19,11 +19,7 @@ A `.webm` file with the same name also works, if you have one.
 
 In `index.html`, replace the paragraph under each game title with your own short description.
 
-Bushveld Brothers does not have a repository link yet. When you do, replace the “GitHub link coming soon” line with:
-
-```html
-<a class="text-link" href="https://github.com/TheBGster/YOUR-REPO" target="_blank" rel="noopener noreferrer">View on GitHub<span class="sr-only"> (opens in a new tab)</span></a>
-```
+Seeds of Change links to [https://github.com/DavidBarker05/Seeds-Of-Change](https://github.com/DavidBarker05/Seeds-Of-Change).
 
 ## Use www.barrie-georgedavies.co.za
 
@@ -77,7 +73,7 @@ A repository named `TheBGster.github.io` often enables Pages on its own. If the 
 
 ### 4. Update the live site later
 
-After you add videos, change a description, or paste the Bushveld Brothers link:
+After you add videos or change a description:
 
 ```powershell
 cd "C:\Users\Barrie-George Davies\Desktop\ShowCase"
