@@ -25,9 +25,17 @@ Bushveld Brothers does not have a repository link yet. When you do, replace the 
 <a class="text-link" href="https://github.com/TheBGster/YOUR-REPO" target="_blank" rel="noopener noreferrer">View on GitHub<span class="sr-only"> (opens in a new tab)</span></a>
 ```
 
+## Use www.barrie-georgedavies.co.za
+
+The site files are published at [https://thebgster.github.io](https://thebgster.github.io). The domain [www.barrie-georgedavies.co.za](http://www.barrie-georgedavies.co.za/) is registered with Afrihost and still points at Afrihost’s placeholder server, so the showcase does not appear there until the DNS records below are changed.
+
+The `CNAME` file tells GitHub Pages to serve this site at `www.barrie-georgedavies.co.za`. Push that file before changing DNS. Leave the mail records alone so email keeps working.
+
+Afrihost’s guide: [How to manage DNS records via ClientZone](https://help.afrihost.com/entry/how-to-manage-dns-records-via-clientzone/).
+
 ## Host it on GitHub Pages
 
-The recommended address is **https://thebgster.github.io**. That needs a public repository named exactly `TheBGster.github.io`.
+The site address on GitHub is **https://thebgster.github.io**. The public address to share is **https://www.barrie-georgedavies.co.za** once DNS is updated. The repository must be named exactly `TheBGster.github.io`.
 
 You need [Git](https://git-scm.com/download/win) installed, and you need to be signed in to GitHub as [TheBGster](https://github.com/TheBGster). [GitHub Desktop](https://desktop.github.com/) is an easier alternative to the commands below if you prefer clicking through it.
 
