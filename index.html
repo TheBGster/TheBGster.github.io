@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Barrie-George Davies — Games</title>
-  <meta name="description" content="Game design and development by Barrie-George Davies. Selected games, with a short description, GitHub link, and footage that plays on its own.">
+  <title>Barrie-George Davies — Game Design &amp; Development</title>
+  <meta name="description" content="Digital portfolio of Barrie-George Davies: selected games in Unity and Unreal, with synopses, roles, process stills, demo videos, and playable builds.">
   <meta name="author" content="Barrie-George Davies">
   <meta name="theme-color" content="#101410">
   <link rel="canonical" href="https://www.barrie-georgedavies.co.za/">
-  <meta property="og:title" content="Barrie-George Davies — Games">
-  <meta property="og:description" content="Selected games by Barrie-George Davies, with code and footage.">
+  <meta property="og:title" content="Barrie-George Davies — Game Design &amp; Development">
+  <meta property="og:description" content="Selected games by Barrie-George Davies, with process, demos, and playable builds.">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +28,7 @@
     <nav class="nav" aria-label="Primary">
       <a href="#work">Games</a>
       <a href="#about">About</a>
+      <a href="https://thebgster.itch.io" target="_blank" rel="noopener noreferrer">itch.io<span class="sr-only"> (opens in a new tab)</span></a>
       <a href="https://www.linkedin.com/in/barrie-george-davies-24135737b" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
       <a href="https://github.com/TheBGster" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in a new tab)</span></a>
     </nav>
@@ -37,68 +38,210 @@
     <section class="hero">
       <p class="kicker">Game design and development</p>
       <h1>Barrie-George Davies</h1>
-      <p class="lede">I design and build games. This page introduces me and holds two of the projects I want to show: a short description, the GitHub repository, and a clip that starts playing on its own.</p>
+      <p class="lede">I am a game designer and developer working in Unity and Unreal Engine. This portfolio presents four shipped student projects, with each game’s team, synopsis, brief, my contribution, tools, process stills, a demo, and a playable build.</p>
       <div class="hero-links">
+        <a class="button button-solid" href="https://thebgster.itch.io" target="_blank" rel="noopener noreferrer">itch.io<span class="sr-only"> (opens in a new tab)</span></a>
         <a class="button" href="https://www.linkedin.com/in/barrie-george-davies-24135737b" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
-        <a class="button button-solid" href="https://github.com/TheBGster" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+        <a class="button" href="https://github.com/TheBGster" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in a new tab)</span></a>
       </div>
     </section>
 
     <section id="work" class="work" aria-labelledby="work-title">
       <div class="section-head">
         <h2 id="work-title">Selected games</h2>
-        <p>Two projects. Each clip is set to play automatically, muted, until you turn the sound on.</p>
+        <p>Four projects spanning a 3D platformer, a tower defence title, a systems-driven farming sim, and a weekend conservation jam.</p>
       </div>
 
-      <article class="project">
-        <div class="project-media" data-video-frame>
-          <!-- Trailer file: videos/monkey-business.mp4 (or .webm). It plays automatically once the file is here. -->
-          <video autoplay muted loop playsinline preload="auto" aria-label="Monkey Business trailer">
-            <source src="videos/monkey-business.mp4" type="video/mp4">
-            <source src="videos/monkey-business.webm" type="video/webm">
-          </video>
-          <div class="title-card title-card-monkey">
-            <p class="title-card-kicker">Trailer</p>
-            <p class="title-card-name">Monkey Business</p>
-            <p class="title-card-note">The clip will play here as soon as the video is added.</p>
-          </div>
-          <div class="media-controls">
-            <button type="button" class="control" data-play hidden>Pause</button>
-            <button type="button" class="control" data-mute hidden>Sound on</button>
-          </div>
-        </div>
-        <div class="project-copy">
-          <p class="index">01</p>
+      <article class="project" id="monkey-business">
+        <figure class="poster">
+          <img src="images/monkey-business.png" alt="Monkey Business title screen, with a 3D monkey standing under the game’s name." width="1920" height="1080">
+          <figcaption>
+            <p class="poster-title">Monkey Business</p>
+            <p class="credits">Barrie-George Davies</p>
+          </figcaption>
+        </figure>
+        <div class="project-body">
+          <p class="index">01 · Unity · C#</p>
           <h3>Monkey Business</h3>
-          <!-- Replace this paragraph with your own short description of the game. -->
-          <p>A game I designed and developed. The footage on this page plays automatically, and the repository is linked below.</p>
-          <a class="text-link" href="https://github.com/TheBGster/MonkeyBusiness" target="_blank" rel="noopener noreferrer">View on GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+          <dl class="facts">
+            <div>
+              <dt>Synopsis</dt>
+              <dd>A third-person 3D platformer set on the savannah. Play as a monkey and race through three stages of jumps, moving platforms, collectables, checkpoints, and enemies. Collect bananas to raise your score, pick up extra lives when you can, and watch your stamina while sprinting. Patrols, a graph-patrolling boss, and shooting enemies try to knock you off course. Touch a checkpoint to save progress. Fall too far or run out of lives, and it is game over. Difficulty is chosen from the main menu before each run.</dd>
+            </div>
+            <div>
+              <dt>Project brief</dt>
+              <dd>A game development module requiring a complete 3D platformer: menus, difficulty, level flow, scoring, lives, checkpoints, and enemy behaviour, delivered as a playable build.</dd>
+            </div>
+            <div>
+              <dt>Role and contribution</dt>
+              <dd>Sole developer. I was the main programmer and 3D artist: gameplay systems, three levels, menus, difficulty, checkpoints, scoring, enemy logic, and the majority of the 3D modelling, including the player character.</dd>
+            </div>
+            <div>
+              <dt>Tools</dt>
+              <dd>Unity and C#.</dd>
+            </div>
+          </dl>
+          <figure class="still">
+            <img src="images/monkey-still.jpg" alt="In-engine title screen for Monkey Business, showing the modelled monkey and menu." width="1920" height="1080">
+            <figcaption>Process still: in-engine title screen with the modelled player character and menu layout.</figcaption>
+          </figure>
+          <div class="qr-row">
+            <a class="qr-card" href="https://youtu.be/sZdDShHj9PA" target="_blank" rel="noopener noreferrer">
+              <img src="images/qr/monkey-demo.png" alt="QR code linking to the Monkey Business demo video." width="240" height="240">
+              <span>Demo video</span>
+              <small>youtu.be/sZdDShHj9PA</small>
+            </a>
+            <a class="qr-card" href="https://thebgster.itch.io/monkey-business" target="_blank" rel="noopener noreferrer">
+              <img src="images/qr/monkey-play.png" alt="QR code linking to the Monkey Business download on itch.io." width="240" height="240">
+              <span>Play / download</span>
+              <small>thebgster.itch.io/monkey-business</small>
+            </a>
+          </div>
         </div>
       </article>
 
-      <article class="project">
-        <div class="project-media" data-video-frame>
-          <!-- Trailer file: videos/seeds-of-change.mp4 (or .webm). It plays automatically once the file is here. -->
-          <video autoplay muted loop playsinline preload="auto" aria-label="Seeds of Change trailer">
-            <source src="videos/seeds-of-change.mp4" type="video/mp4">
-            <source src="videos/seeds-of-change.webm" type="video/webm">
-          </video>
-          <div class="title-card title-card-seeds">
-            <p class="title-card-kicker">Trailer</p>
-            <p class="title-card-name">Seeds of Change</p>
-            <p class="title-card-note">The clip will play here as soon as the video is added.</p>
-          </div>
-          <div class="media-controls">
-            <button type="button" class="control" data-play hidden>Pause</button>
-            <button type="button" class="control" data-mute hidden>Sound on</button>
+      <article class="project" id="grove-defence">
+        <figure class="poster">
+          <img src="images/grove-defence.png" alt="Grove Defence start screen, with Play and Exit over a generated grove map." width="1920" height="1080">
+          <figcaption>
+            <p class="poster-title">Grove Defence</p>
+            <p class="credits">Barrie-George Davies</p>
+          </figcaption>
+        </figure>
+        <div class="project-body">
+          <p class="index">02 · Unreal Engine · C++</p>
+          <h3>Grove Defence</h3>
+          <dl class="facts">
+            <div>
+              <dt>Synopsis</dt>
+              <dd>A jungle tower defence game. Raiders march the paths toward a central tree. Spend resources to place defenders, buy upgrades, and keep the grove standing. Each run builds a new map and a Grove Chronicle: a grove name, omen, and wave flavour seeded with the terrain. Waves grow harder as you upgrade, so gold does not make the raid easy.</dd>
+            </div>
+            <div>
+              <dt>Project brief</dt>
+              <dd>A game development module requiring a complete tower defence game: pathing, placement, economy, upgrades, wave scaling, and a generated world, delivered as a playable Unreal build.</dd>
+            </div>
+            <div>
+              <dt>Role and contribution</dt>
+              <dd>Sole developer. I was the main programmer and 3D artist: tower defence systems in C++, procedural map and chronicle generation, combat economy, user interface, and the 3D modelling used in the grove.</dd>
+            </div>
+            <div>
+              <dt>Tools</dt>
+              <dd>Unreal Engine and C++.</dd>
+            </div>
+          </dl>
+          <figure class="still">
+            <img src="images/grove-still.jpg" alt="Unreal Engine play-in-editor view of Grove Defence, with the heartwood, paths, and HUD." width="1920" height="1080">
+            <figcaption>Process still: Unreal Engine play-in-editor session, with the heartwood, raid paths, and HUD under test.</figcaption>
+          </figure>
+          <div class="qr-row">
+            <a class="qr-card" href="https://youtu.be/48syx8BSb4c" target="_blank" rel="noopener noreferrer">
+              <img src="images/qr/grove-demo.png" alt="QR code linking to the Grove Defence demo video." width="240" height="240">
+              <span>Demo video</span>
+              <small>youtu.be/48syx8BSb4c</small>
+            </a>
+            <a class="qr-card" href="https://thebgster.itch.io/grove-defence" target="_blank" rel="noopener noreferrer">
+              <img src="images/qr/grove-play.png" alt="QR code linking to the Grove Defence download on itch.io." width="240" height="240">
+              <span>Play / download</span>
+              <small>thebgster.itch.io/grove-defence</small>
+            </a>
           </div>
         </div>
-        <div class="project-copy">
-          <p class="index">02</p>
+      </article>
+
+      <article class="project" id="seeds-of-change">
+        <figure class="poster">
+          <img src="images/seeds-of-change.png" alt="Seeds of Change main menu, with Start Game, Play Guide, Exit Game, and Credits." width="1920" height="1080">
+          <figcaption>
+            <p class="poster-title">Seeds of Change</p>
+            <p class="credits">Barrie-George Davies · David Barker</p>
+          </figcaption>
+        </figure>
+        <div class="project-body">
+          <p class="index">03 · Unity · C#</p>
           <h3>Seeds of Change</h3>
-          <!-- Replace this paragraph with your own short description of the game. -->
-          <p>A game I designed and developed. The footage on this page plays automatically, and the repository is linked below.</p>
-          <a class="text-link" href="https://github.com/DavidBarker05/Seeds-Of-Change" target="_blank" rel="noopener noreferrer">View on GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+          <dl class="facts">
+            <div>
+              <dt>Synopsis</dt>
+              <dd>A farming simulator in which the choices you make shape both your survival and your community’s. In a village facing a food crisis, you farm through changing seasons, weather, drought, and pests, then face the same question at every harvest: feed your family, or feed the community. Neither answer comes without a cost.</dd>
+            </div>
+            <div>
+              <dt>Project brief</dt>
+              <dd>A game design project exploring systems design and player choice: seasonal farming, resource pressure, and the tension between personal survival and communal care, delivered as a playable prototype.</dd>
+            </div>
+            <div>
+              <dt>Role and contribution</dt>
+              <dd>Lead 3D artist, working with David Barker. I modelled the majority of the 3D assets in the farm, market, and village, supporting the systems and narrative the team built in Unity.</dd>
+            </div>
+            <div>
+              <dt>Tools</dt>
+              <dd>Unity and C#.</dd>
+            </div>
+          </dl>
+          <figure class="still">
+            <img src="images/seeds-still.jpg" alt="Gameplay still of the Seeds of Change market stall, with family and community food counters and the current season." width="1920" height="1080">
+            <figcaption>Process still: market stall and HUD during a rainy-season day, with family and community food tracked in play.</figcaption>
+          </figure>
+          <div class="qr-row">
+            <a class="qr-card" href="https://youtu.be/P_k6IQDQAkA" target="_blank" rel="noopener noreferrer">
+              <img src="images/qr/seeds-demo.png" alt="QR code linking to the Seeds of Change demo video." width="240" height="240">
+              <span>Demo video</span>
+              <small>youtu.be/P_k6IQDQAkA</small>
+            </a>
+            <a class="qr-card" href="https://omega0.itch.io/seeds-of-change" target="_blank" rel="noopener noreferrer">
+              <img src="images/qr/seeds-play.png" alt="QR code linking to the Seeds of Change download on itch.io." width="240" height="240">
+              <span>Play / download</span>
+              <small>omega0.itch.io/seeds-of-change</small>
+            </a>
+          </div>
+          <p class="source-link"><a href="https://github.com/DavidBarker05/Seeds-Of-Change" target="_blank" rel="noopener noreferrer">Source on GitHub<span class="sr-only"> (opens in a new tab)</span></a></p>
+        </div>
+      </article>
+
+      <article class="project" id="bushveld-brothers">
+        <figure class="poster">
+          <img src="images/bushveld-brothers.jpg" alt="Bushveld Brothers: Poachers Pasop title poster, with a rhino and giraffe in a rifle sight over a sunset bushveld." width="1920" height="1080">
+          <figcaption>
+            <p class="poster-title">Bushveld Brothers</p>
+            <p class="credits">Barrie-George Davies · David Barker · Tiyah Singh · Jamie-Lee Davies</p>
+          </figcaption>
+        </figure>
+        <div class="project-body">
+          <p class="index">04 · Unity · C#</p>
+          <h3>Bushveld Brothers</h3>
+          <dl class="facts">
+            <div>
+              <dt>Synopsis</dt>
+              <dd>A conservation game rooted in ubuntu, the idea of humanity towards others at the heart of much African thought. You play as Barries, who joins a brotherhood of rangers. They see themselves as protectors of animals and of African heritage. Patrols cross the bushveld: read human and animal spoor, free animals from snares, and capture poachers before time runs out.</dd>
+            </div>
+            <div>
+              <dt>Project brief</dt>
+              <dd>A weekend game jam. The brief was to ship a complete, themed prototype in a few days, with shared art, design, and code under a hard deadline.</dd>
+            </div>
+            <div>
+              <dt>Role and contribution</dt>
+              <dd>Lead 3D artist. I modelled the majority of the 3D assets used in the jam build, working alongside David Barker, Tiyah Singh, and Jamie-Lee Davies.</dd>
+            </div>
+            <div>
+              <dt>Tools</dt>
+              <dd>Unity and C#.</dd>
+            </div>
+          </dl>
+          <figure class="still">
+            <img src="images/bushveld-still.jpg" alt="Bushveld Brothers title screen from the jam build, with menu stones over the bushveld sunset." width="1920" height="1080">
+            <figcaption>Process still: title screen and branding from the jam build, with the team’s logo and menu layout.</figcaption>
+          </figure>
+          <div class="qr-row">
+            <a class="qr-card" href="https://youtu.be/PPmtfxo6iPI" target="_blank" rel="noopener noreferrer">
+              <img src="images/qr/bushveld-demo.png" alt="QR code linking to the Bushveld Brothers demo video." width="240" height="240">
+              <span>Demo video</span>
+              <small>youtu.be/PPmtfxo6iPI</small>
+            </a>
+            <a class="qr-card" href="https://omega0.itch.io/bushveld-brothers" target="_blank" rel="noopener noreferrer">
+              <img src="images/qr/bushveld-play.png" alt="QR code linking to the Bushveld Brothers download on itch.io." width="240" height="240">
+              <span>Play / download</span>
+              <small>omega0.itch.io/bushveld-brothers</small>
+            </a>
+          </div>
         </div>
       </article>
     </section>
@@ -110,24 +253,35 @@
       <div>
         <p class="kicker">About</p>
         <h2 id="about-title">Hello, I’m Barrie-George.</h2>
-        <p>I’m Barrie-George Davies. Over the years I have been designing and developing games, and I keep the work where people can look at it: on this page, on <a href="https://github.com/TheBGster" target="_blank" rel="noopener noreferrer">GitHub</a><span class="sr-only"> (opens in a new tab)</span> as <strong>TheBGster</strong>, and on <a href="https://www.linkedin.com/in/barrie-george-davies-24135737b" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
-        <p>The two games above are the ones I am showing for now. Each one has a short note, a link to the code when the repository is ready, and a video set to play by itself. The clips stay quiet until you choose sound.</p>
+        <p>I design and develop games, with a particular interest in 3D work, gameplay systems, and titles that sit in a South African setting. I work in Unity with C# and in Unreal Engine with C++, and I often handle both programming and modelling on a project.</p>
+        <p>The four games on this page are the ones I am putting forward: a solo platformer, a solo tower defence title in Unreal, a farming sim built with David Barker, and a conservation jam made with David Barker, Tiyah Singh, and Jamie-Lee Davies. Builds and demos live on itch.io; process and source sit here and on GitHub.</p>
         <div class="hero-links">
-          <a class="button" href="https://www.linkedin.com/in/barrie-george-davies-24135737b" target="_blank" rel="noopener noreferrer">linkedin.com/in/barrie-george-davies-24135737b<span class="sr-only"> (opens in a new tab)</span></a>
-          <a class="button" href="https://github.com/TheBGster" target="_blank" rel="noopener noreferrer">github.com/TheBGster<span class="sr-only"> (opens in a new tab)</span></a>
+          <a class="button button-solid" href="https://thebgster.itch.io" target="_blank" rel="noopener noreferrer">itch.io<span class="sr-only"> (opens in a new tab)</span></a>
+          <a class="button" href="https://www.linkedin.com/in/barrie-george-davies-24135737b" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
+          <a class="button" href="https://github.com/TheBGster" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in a new tab)</span></a>
         </div>
       </div>
+    </section>
+
+    <section class="peers" aria-labelledby="peers-title">
+      <h2 id="peers-title">Also see</h2>
+      <p>Work by people I have made games with, and studios worth a look.</p>
+      <ul>
+        <li><a href="https://www.lankypotatostudio.co.za" target="_blank" rel="noopener noreferrer">lankypotatostudio.co.za<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a href="https://david-barker-dev.co.za/" target="_blank" rel="noopener noreferrer">david-barker-dev.co.za<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a href="http://www.jamie-leedavies.co.za" target="_blank" rel="noopener noreferrer">jamie-leedavies.co.za<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a href="https://tiyahsingh.co.za" target="_blank" rel="noopener noreferrer">tiyahsingh.co.za<span class="sr-only"> (opens in a new tab)</span></a></li>
+      </ul>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>Barrie-George Davies</p>
     <p>
+      <a href="https://thebgster.itch.io" target="_blank" rel="noopener noreferrer">itch.io</a>
       <a href="https://www.linkedin.com/in/barrie-george-davies-24135737b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="https://github.com/TheBGster" target="_blank" rel="noopener noreferrer">GitHub</a>
     </p>
   </footer>
-
-  <script src="js/main.js" defer></script>
 </body>
 </html>

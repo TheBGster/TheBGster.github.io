@@ -1,25 +1,8 @@
 # Barrie-George Davies — game showcase
 
-A one-page site introducing Barrie-George Davies and two games: Monkey Business and Seeds of Change. Each game has a short description, a GitHub link, and a video that plays automatically.
+A one-page portfolio for Barrie-George Davies with four games: Monkey Business, Grove Defence, Seeds of Change, and Bushveld Brothers. Each project has a poster with credits, a synopsis, the project brief, role, tools, a process still, and QR codes for the demo video and the itch.io build.
 
-## Add your trailers
-
-Export each trailer as an **MP4 (H.264)**, ideally under 30 MB. GitHub rejects files over 100 MB.
-
-Save them in the `videos` folder with these exact names:
-
-- `videos/monkey-business.mp4`
-- `videos/seeds-of-change.mp4`
-
-Reload the page. The title card disappears and the clip plays on its own, muted and looping. Use **Sound on** to hear it, and **Pause** to stop it.
-
-A `.webm` file with the same name also works, if you have one.
-
-## Edit the words
-
-In `index.html`, replace the paragraph under each game title with your own short description.
-
-Seeds of Change links to [https://github.com/DavidBarker05/Seeds-Of-Change](https://github.com/DavidBarker05/Seeds-Of-Change).
+Profile links: [itch.io](https://thebgster.itch.io), [LinkedIn](https://www.linkedin.com/in/barrie-george-davies-24135737b), [GitHub](https://github.com/TheBGster).
 
 ## Use www.barrie-georgedavies.co.za
 
