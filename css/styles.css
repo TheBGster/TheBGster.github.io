@@ -274,20 +274,21 @@ h1 {
 }
 
 .poster img,
+.poster video,
+.poster iframe.demo-frame,
 .still img {
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  display: block;
+  border: 0;
+  background: #070907;
 }
 
 .poster figcaption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 3.2rem 1.3rem 1.15rem;
-  background: linear-gradient(transparent, rgba(7, 9, 7, 0.92) 70%);
+  padding: 0.85rem 1.1rem 1rem;
+  background: var(--bg-raise);
 }
 
 .poster-title {
